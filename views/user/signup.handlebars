@@ -1,0 +1,55 @@
+<div class="form-div">
+		<div class="card card-form">
+		  <div class="card-body">
+
+		  	<div class= "form-header-content text-center">
+		  		<h3>Sign Up</h3>
+		  	</div>
+        {{#if hasErrors}}
+            <div class="alert alert-danger">
+              {{#each messages }}
+                 <p>{{this.message}}</p>
+              {{/each}}
+            </div>
+        {{/if}}
+
+		    <div class="form">
+		    	<form action="/signup" method="post">
+		    		<div>
+		    			<label class="form-content">Full Name</label>
+		    			<input type="textbox" value="{{fullName}}" name="fullName" class="form-content" placeholder="Full Name">
+
+		    			<label class="form-content">Email Address</label>
+		    			<input  class="form-content" value="{{email}}" type="email" name="email" type="textbox" placeholder="Email" />
+		    			
+		    			<label class="form-content">Password</label>
+		    			<input class="form-content"  type="Password" name="password" Placeholder="Password"/>
+
+		    			<label class="form-content">Confirm Password</label>
+		    			<input class="form-content"  type="Password" name="passwordConfirm" placeholder="Confirm Password" />
+               
+              
+		    			<input class="form-content"  type="hidden" value="{{ csrfToken }}" name="_csrf" />
+
+		    		</div>
+
+		    		{{!-- <div class="checkbox">
+		    			<input type="checkbox" name="value" value ="true" style="width: auto;"><strong>Check Me Out</strong>	
+		    		</div> --}}
+
+		    		<div class="btns">
+		    			<button type="submit" class="btn btn-primary">Submit</button>
+		    		</div>
+		    	</form>
+          
+		    </div>
+		  </div>
+		</div>
+	</div>
+
+
+
+{{!-- <label class="form-content">Mobile Number</label>
+<input type="textbox" value="{{mobile}}" name="mobile" class="form-content" placeholder="Contact Number" />
+<label class="form-content">Aadhar Number</label>
+<input  class="form-content" value="{{aadhar}}" name="aadhar"  type="textbox" placeholder="Aadhar Number" /> --}}

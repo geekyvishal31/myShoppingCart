@@ -1,0 +1,21 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "@types/csurf": "^1.9.36",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.4",
+    "csurf": "^1.10.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
+    "express-validator": "^5.3.0",
+    "mime-types": "^2.1.24",
+    "mongoose": "^5.7.13",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  }
+}

@@ -1,0 +1,28 @@
+.card img {
+  max-height: 150px;
+}
+
+.card-text{
+  color: #7f7f7f;
+}
+
+.price{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.fix{
+  margin-top: -25px;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.gap{
+  height:50px ;
+}
+.product-face{
+   max-height: 150px;
+   max-width: 200px;
+}
